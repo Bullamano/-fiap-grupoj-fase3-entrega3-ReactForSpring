@@ -1,0 +1,19 @@
+/* Centralização dos conteúdos do App */
+.App {
+  text-align: center;
+}
+
+/* Margem para compensar a altura do header */
+/* Deve ser usada para envelopar as páginas */
+.Contents {
+  margin-top: 10vh;
+}
+
+.Back-link,
+.Card-link,
+.Home-link:link,
+.Home-link:visited,
+.Home-link:hover,
+.Home-link:active {
+    text-decoration: none;
+}

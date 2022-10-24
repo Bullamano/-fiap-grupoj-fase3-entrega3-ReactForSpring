@@ -1,0 +1,43 @@
+/* Área externa da secção de informações */
+.Greeter-box {
+    margin: 15px 0 15px 0;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    background-color: #A5D8FF;
+    border-radius: 0 0 30px 30px;
+}
+
+/* Container para conteúdos do greeter */
+.Greeter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Greeter-title {
+    font-size: 4em;
+}
+
+.Greeter-text {
+    font-size: 1.3em;
+    padding-bottom: 10px;
+}
+
+.Lightbulb-Image {
+    height: 350px;
+}
+
+@media only screen and (max-width: 900px) {
+    .Lightbulb-Image {
+        height: 200px;
+    }
+    .Greeter-title {
+        font-size: 2em;
+    } 
+    
+    .Greeter-text {
+        font-size: 1.3em;
+
+    }
+}
+

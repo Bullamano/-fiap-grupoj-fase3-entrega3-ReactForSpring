@@ -1,0 +1,10 @@
+/* Grid externa contendo todos os Cards */
+.Custom-grid {
+    text-align: center;
+    justify-content: center;
+}
+
+/* Container para a Grid */
+.Grid-container {
+    margin: 15px;
+}

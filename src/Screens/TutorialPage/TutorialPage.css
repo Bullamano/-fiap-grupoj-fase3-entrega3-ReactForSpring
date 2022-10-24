@@ -1,0 +1,70 @@
+.Back-link {
+    color: #151515;
+}
+
+.Floating-back {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    padding: 5px 5px 0 5px;
+    height: fit-content;
+    width: fit-content;
+    background-color: #FFA375;
+    border: 2px solid #151515;
+}
+
+.Tutorial-container {
+    margin-top: 60px;
+}
+
+.Material-holder {
+    background-color: #92c2e4;
+    border-radius: 0 0 30px 30px;
+    padding-bottom: 5px;
+}
+
+.Upper-holder {
+    background-color: #FFA375;
+    border-radius: 0 0 30px 30px;
+    padding-bottom: 5px;
+}
+
+.Image-holder {
+    width: 100%;
+    background-color: #252525;
+    height: auto;
+    border-radius: 0 0 30px 30px;
+}
+
+.Tutorial-image {
+    /* width: 100%; */
+    max-height: 50vh;
+}
+
+h3 {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+h2 {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: left;
+}
+
+@media only screen and (max-width: 900px) {
+    h3 {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    
+    h2 {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: left;
+    }
+}
+
+.Divider-cards {
+    margin: 20px;
+}

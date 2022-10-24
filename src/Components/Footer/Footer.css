@@ -1,0 +1,10 @@
+/* Footer do site */
+.App-footer {
+    margin: 5px;
+    text-align: center;
+}
+
+/* Divisória entre as secções */
+.Divider-footer {
+    margin: 20px;
+}
