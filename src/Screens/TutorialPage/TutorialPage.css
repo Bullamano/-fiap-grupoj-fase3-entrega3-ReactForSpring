@@ -11,6 +11,7 @@
     width: fit-content;
     background-color: #FFA375;
     border: 2px solid #151515;
+    border-radius: 0px 0px 10px 0px;
 }
 
 .Tutorial-container {
@@ -41,9 +42,14 @@
     max-height: 50vh;
 }
 
+.Limit-width-box {
+    max-width: 100%
+}
+
 h3 {
     margin-left: 20vw;
     margin-right: 20vw;
+    overflow-wrap: break-word;
 }
 
 h2 {

@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import CustomGrid from '../../Components/CustomGrid/CustomGrid';
 import GreeterArea from '../../Components/GreeterArea/GreeterArea';
-import CardArray from '../../ValueObjects/CardArray';
+//import CardArray from '../../ValueObjects/CardArray';
 import { GetTutorialItems } from '../../Services/FetchAPI';
 import './Home.css';
-
-//TODO retornar greeter e cards
 
 /**
  * Home screen da aplicação.
@@ -21,11 +19,13 @@ const Home = () =>
 
     setReturnAPI(apiResponse);
 
-    console.log(returnAPI);
+    //console.log(returnAPI);
   }
 
   useEffect(() =>
   {
+    //React reclama de react-hooks/exhaustive-deps,
+    //contudo este é o uso pretendido.
     fetchData();
   }, []);
 

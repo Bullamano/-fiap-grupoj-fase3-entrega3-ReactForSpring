@@ -1,0 +1,13 @@
+.Delete-floating-back {
+    position: fixed;
+    bottom: 1vh;
+    right: 2vw;
+    padding: 5px 5px 0 5px;
+    height: fit-content;
+    width: fit-content;
+    background-color: #FFA375;
+    border: 2px solid #151515;
+    border-radius: 20px;
+    z-index: 100;
+    cursor: pointer;
+}

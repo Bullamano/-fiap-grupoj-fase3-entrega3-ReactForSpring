@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
 import ArrowBackIcon from '@mui/icons-material/ArrowBackOutlined';
-import CardArray from '../../ValueObjects/CardArray';
+//import CardArray from '../../ValueObjects/CardArray';
 import { GetTutorialItemById } from '../../Services/FetchAPI';
+import DeleteButton from '../../Components/DeleteButton/DeleteButton';
 
 import './TutorialPage.css'
 
@@ -20,11 +21,13 @@ const TutorialPage = () =>
 
         setReturnAPI(apiResponse);
 
-        console.log(returnAPI);
+        //console.log(returnAPI);
     }
 
     useEffect(() =>
     {
+        //React reclama de react-hooks/exhaustive-deps,
+        //contudo este é o uso pretendido.
         fetchData();
     }, []);
 
@@ -42,16 +45,23 @@ const TutorialPage = () =>
                     <div className='Image-holder'>
                         <img className='Tutorial-image' src={ pageCard.imageUrl } alt={ 'Imagem de: ' + pageCard.title } />
                     </div>
-                    <h1>{ pageCard.title }</h1>
+                    <div className='Limit-width-box'>
+                        <h1>{ pageCard.title }</h1>
+                    </div>
                 </div>
                 <h2>Você precisa de...</h2>
-                <h3>{ pageCard.materials }</h3>
+                <div className='Limit-width-box'>
+                    <h3>{ pageCard.materials }</h3>
+                </div>
             </div>
             <h2>Como fazer...</h2>
-            <h3>{ pageCard.steps }</h3>
-            <div className='Divider-cards'>
-                <Divider />
+            <div className='Limit-width-box'>
+                <h3>{ pageCard.steps }</h3>
             </div>
+            <DeleteButton id={ pageCard.id } />
+            <div className='Divider-cards'>
+            </div>
+            <Divider />
         </div>
     );
 };
