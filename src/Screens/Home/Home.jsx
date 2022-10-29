@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import AddButton from '../../Components/AddButton/AddButton';
 import CustomGrid from '../../Components/CustomGrid/CustomGrid';
 import GreeterArea from '../../Components/GreeterArea/GreeterArea';
 //import CardArray from '../../ValueObjects/CardArray';
@@ -33,6 +34,7 @@ const Home = () =>
     <div className='Home-screen'>
       <GreeterArea />
       <CustomGrid cards={ returnAPI } />
+      <AddButton />
     </div>
   );
 };

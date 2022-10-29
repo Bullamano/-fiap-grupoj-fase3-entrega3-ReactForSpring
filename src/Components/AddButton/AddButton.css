@@ -1,19 +1,20 @@
-.Delete-floating-back {
+.Add-floating-back {
     position: fixed;
     bottom: 2vh;
     right: 2vw;
     padding: 5px 5px 0 5px;
     height: fit-content;
     width: fit-content;
-    background-color: #FFA375;
+    background-color: #A5D8FF;
     border: 2px solid #151515;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     z-index: 100;
     cursor: pointer;
 }
 
-.Delete-floating-back:hover {
-    background-color: #e52e2e;
-    box-shadow: 0px 0px 20px rgba(229, 46, 86, 0.4);
+.Add-floating-back:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 0px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
 }
