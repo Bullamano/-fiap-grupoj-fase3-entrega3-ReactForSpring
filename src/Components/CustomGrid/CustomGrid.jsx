@@ -3,6 +3,8 @@ import Grid from '@mui/material/Grid';
 import CustomCard from '../CustomCard/CustomCard';
 import './CustomGrid.css';
 
+//TODO atualizar comentários de documentação
+
 /**
  * Grid customizada para receber componentes CustomCard
  * que preenchem a tela com os procedimentos
