@@ -108,7 +108,7 @@ async function PutTutorialItem(id, title, materials, steps, imageUrl, category)
                 {
                     title: title,
                     materials: materials,
-                    stepr: steps,
+                    steps: steps,
                     imageUrl: imageUrl,
                     category: category
                 }
@@ -116,6 +116,35 @@ async function PutTutorialItem(id, title, materials, steps, imageUrl, category)
         }
         const response = await fetch(API + '/' + id, requestOptions)
             .then((response) => response.json())
+
+        //console.log(response);
+
+        return response;
+    }
+    catch (error)
+    {
+        console.log("error", error);
+    }
+}
+
+async function PutTutorialItemSimpleResponse(id, title, materials, steps, imageUrl, category) 
+{
+    try 
+    {
+        const requestOptions = {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(
+                {
+                    title: title,
+                    materials: materials,
+                    steps: steps,
+                    imageUrl: imageUrl,
+                    category: category
+                }
+            )
+        }
+        const response = await fetch(API + '/' + id, requestOptions);
 
         //console.log(response);
 
@@ -143,4 +172,4 @@ async function DeleteTutorialItemById(id)
     }
 }
 
-export { GetTutorialItems, GetTutorialItemById, PostTutorialItem, PostTutorialItemSimpleResponse, PutTutorialItem, DeleteTutorialItemById }
+export { GetTutorialItems, GetTutorialItemById, PostTutorialItem, PostTutorialItemSimpleResponse, PutTutorialItem, PutTutorialItemSimpleResponse, DeleteTutorialItemById }

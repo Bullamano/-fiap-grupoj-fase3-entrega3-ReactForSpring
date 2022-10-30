@@ -1,8 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { PostTutorialItemSimpleResponse } from '../../Services/FetchAPI';
-import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
+import TextField from '@mui/material/TextField';
 import BackHomeButton from '../../Components/BackHomeButton/BackHomeButton';
 import './AddingPage.css';
 
@@ -20,7 +21,6 @@ const AddingPage = () =>
             alert('Tamanho máximo para este campo atingido com ' + maxSize + ' caracteres.');
         }
     }
-
 
     async function AddItem(title, materials, steps, imageUrl, category)
     {
@@ -63,6 +63,7 @@ const AddingPage = () =>
             <div className='Form-add'>
                 <h2>Adicione seus próprios itens!</h2>
                 <h3>Preencha os campos abaixo e adicione seu item.</h3>
+                <h4>Os campos deste formulário são multi-linhas, sendo assim, pressionar "Enter" não enviará seu item (apenas o campo URL não é multi-linha).</h4>
                 <form onSubmit={ handleSubmit }>
                     <TextField
                         inputProps={ { maxLength: smallFieldLength } }
@@ -106,6 +107,7 @@ const AddingPage = () =>
                         name='imageUrl'
                         label="URL da imagem para o item"
                         variant="outlined"
+                        onKeyPress={ (e) => { e.key === 'Enter' && e.preventDefault(); } }
                         onChange={ (e) =>
                         {
                             testSize(bigFieldLength, e.target.value.length);
@@ -123,7 +125,16 @@ const AddingPage = () =>
                             testSize(smallFieldLength, e.target.value.length);
                         } } />
                     <br /><br />
-                    <button type='submit'>Adicionar</button>
+                    <Button
+                        type='submit'
+                        variant="contained"
+                        style={ {
+                            margin: "15px",
+                            color: "#FFFFFF",
+                            backgroundColor: "#2EE59D"
+                        } }>
+                        Adicionar
+                    </Button>
                 </form>
             </div>
             <div className='Divider-add'>

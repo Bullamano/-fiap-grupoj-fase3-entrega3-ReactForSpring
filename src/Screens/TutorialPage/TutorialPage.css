@@ -55,7 +55,7 @@ h2 {
         margin-left: 5vw;
         margin-right: 5vw;
     }
-    
+
     h2 {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -66,4 +66,22 @@ h2 {
 /* Linha divisória */
 .Divider-cards {
     margin: 20px;
+}
+
+.Box-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 90%;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 24;
+    padding: 20px;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
 }
