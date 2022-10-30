@@ -49,7 +49,7 @@ async function PostTutorialItem(title, materials, steps, imageUrl, category)
                 {
                     title: title,
                     materials: materials,
-                    stepr: steps,
+                    steps: steps,
                     imageUrl: imageUrl,
                     category: category
                 }
@@ -57,6 +57,35 @@ async function PostTutorialItem(title, materials, steps, imageUrl, category)
         }
         const response = await fetch(API, requestOptions)
             .then((response) => response.json())
+
+        //console.log(response);
+
+        return response;
+    }
+    catch (error)
+    {
+        console.log("error", error);
+    }
+}
+
+async function PostTutorialItemSimpleResponse(title, materials, steps, imageUrl, category) 
+{
+    try 
+    {
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(
+                {
+                    title: title,
+                    materials: materials,
+                    steps: steps,
+                    imageUrl: imageUrl,
+                    category: category
+                }
+            )
+        }
+        const response = await fetch(API, requestOptions);
 
         //console.log(response);
 
@@ -114,4 +143,4 @@ async function DeleteTutorialItemById(id)
     }
 }
 
-export { GetTutorialItems, GetTutorialItemById, PostTutorialItem, PutTutorialItem, DeleteTutorialItemById }
+export { GetTutorialItems, GetTutorialItemById, PostTutorialItem, PostTutorialItemSimpleResponse, PutTutorialItem, DeleteTutorialItemById }

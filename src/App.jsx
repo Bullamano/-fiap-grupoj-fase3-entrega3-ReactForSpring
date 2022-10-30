@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Screens/Home/Home';
-import TutorialPage from './Screens/TutorialPage/TutorialPage'
+import TutorialPage from './Screens/TutorialPage/TutorialPage';
+import AddingPage from './Screens/AddingPage/AddingPage';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import './App.css';
@@ -18,6 +19,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/:id" element={<TutorialPage />} />
+          <Route path="/add" element={<AddingPage />} />
           <Route path='/' element={<Landing />} />
         </Routes>
       </BrowserRouter>

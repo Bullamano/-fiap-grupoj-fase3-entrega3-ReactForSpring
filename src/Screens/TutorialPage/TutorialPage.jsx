@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Link } from "react-router-dom";
-import Divider from '@mui/material/Divider';
-import Box from '@mui/material/Box';
-import ArrowBackIcon from '@mui/icons-material/ArrowBackOutlined';
-//import CardArray from '../../ValueObjects/CardArray';
 import { GetTutorialItemById } from '../../Services/FetchAPI';
+import Divider from '@mui/material/Divider';
+import BackHomeButton from '../../Components/BackHomeButton/BackHomeButton';
 import DeleteButton from '../../Components/DeleteButton/DeleteButton';
-
 import './TutorialPage.css'
+//import CardArray from '../../ValueObjects/CardArray';
 
 const TutorialPage = () =>
 {
@@ -35,15 +32,14 @@ const TutorialPage = () =>
 
     return (
         <div className='Contents'>
-            <Link to='/' className='Back-link'>
-                <Box className='Floating-back'>
-                    <ArrowBackIcon />
-                </Box>
-            </Link>
+            <BackHomeButton />
             <div className='Material-holder'>
                 <div className='Upper-holder'>
                     <div className='Image-holder'>
-                        <img className='Tutorial-image' src={ pageCard.imageUrl } alt={ 'Imagem de: ' + pageCard.title } />
+                        <img
+                            className='Tutorial-image'
+                            src={ pageCard.imageUrl }
+                            alt={ 'Imagem de: ' + pageCard.title } />
                     </div>
                     <div className='Limit-width-box'>
                         <h1>{ pageCard.title }</h1>
@@ -60,8 +56,8 @@ const TutorialPage = () =>
             </div>
             <DeleteButton id={ pageCard.id } />
             <div className='Divider-cards'>
+                <Divider />
             </div>
-            <Divider />
         </div>
     );
 };

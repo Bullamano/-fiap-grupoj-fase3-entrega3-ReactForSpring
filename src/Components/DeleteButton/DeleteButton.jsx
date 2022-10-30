@@ -1,9 +1,9 @@
 import React from 'react';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Box from '@mui/material/Box';
-import './DeleteButton.css'
 import { useNavigate } from 'react-router-dom';
 import { DeleteTutorialItemById } from '../../Services/FetchAPI';
+import './DeleteButton.css'
 
 const DeleteButton = ({ id }) =>
 {
