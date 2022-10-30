@@ -1,8 +1,9 @@
-
+/* Container para os conteúdos da página */
 .Form-add {
     margin-top: 15vh;
 }
 
+/* Formulário da página */
 form {
     width: 80%;
     margin: 0 auto;

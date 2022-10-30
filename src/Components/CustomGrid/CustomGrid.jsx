@@ -1,14 +1,16 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
-import CustomCard from '../CustomCard/CustomCard';
-import './CustomGrid.css';
 
-//TODO atualizar comentários de documentação
+import Grid from '@mui/material/Grid';
+
+import CustomCard from '../CustomCard/CustomCard';
+
+import './CustomGrid.css';
 
 /**
  * Grid customizada para receber componentes CustomCard
  * que preenchem a tela com os procedimentos
  * @param {object} cards Objeto contendo as propriedades:
+ * - 'id' (ID do objeto que popula o card)
  * - 'title' (string com o título do procedimento)
  * - 'imageUrl' (URL da imagem do procedimento)
  * @returns Grid de CustomCard com informações de procedimentos

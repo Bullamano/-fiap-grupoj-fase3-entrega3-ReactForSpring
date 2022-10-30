@@ -1,10 +1,18 @@
 import React from 'react';
-import DeleteIcon from '@mui/icons-material/Delete';
-import Box from '@mui/material/Box';
 import { useNavigate } from 'react-router-dom';
+
+import Box from '@mui/material/Box';
+import DeleteIcon from '@mui/icons-material/Delete';
+
 import { DeleteTutorialItemById } from '../../Services/FetchAPI';
+
 import './DeleteButton.css'
 
+/**
+ * Botão para deletaro item
+ * @param {int} id ID do objeto a ser deletado 
+ * @returns 
+ */
 const DeleteButton = ({ id }) =>
 {
     const navigate = useNavigate();

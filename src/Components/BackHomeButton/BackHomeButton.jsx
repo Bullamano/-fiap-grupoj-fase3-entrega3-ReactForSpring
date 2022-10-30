@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Box from '@mui/material/Box';
+
 import ArrowBackIcon from '@mui/icons-material/ArrowBackOutlined';
+import Box from '@mui/material/Box';
+
 import './BackHomeButton.css'
 
+/**
+ * Botão para retornar à Home.
+ * @returns Botão que, ao clicar, redireciona para a Home.
+ */
 const BackHomeButton = () =>
 {
     return (

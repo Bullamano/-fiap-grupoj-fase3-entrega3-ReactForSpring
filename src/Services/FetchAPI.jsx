@@ -1,9 +1,12 @@
-import { useState } from "react";
-
+/**
+ * URL da API desenvolvida em https://github.com/Bullamano/fiap-grupoj-fase3-entrega2-Spring
+ */
 const API = 'http://127.0.0.1:8080/api/v1/tutorialItem';
 
-//TODO Comentar, retirar console.log e colocar tratamentos de erro
-
+/**
+ * Função de retorno de todos os itens da API
+ * @returns JSON com todos os itens da API
+ */
 async function GetTutorialItems() 
 {
     try 
@@ -21,6 +24,11 @@ async function GetTutorialItems()
     }
 }
 
+/**
+ * Pesquisa de itens por ID
+ * @param {int} id ID do item pesquisado
+ * @returns JSON com o item pesquisado
+ */
 async function GetTutorialItemById(id) 
 {
     try 
@@ -38,6 +46,15 @@ async function GetTutorialItemById(id)
     }
 }
 
+/**
+ * Inclusão de item na API
+ * @param {String} title Título
+ * @param {String} materials Materiais necessários
+ * @param {String} steps Passo-a-passo
+ * @param {String} imageUrl URL da imagem acompanhante
+ * @param {String} category Categoria
+ * @returns JSON com a resposta da API (o objeto incluso)
+ */
 async function PostTutorialItem(title, materials, steps, imageUrl, category) 
 {
     try 
@@ -68,6 +85,15 @@ async function PostTutorialItem(title, materials, steps, imageUrl, category)
     }
 }
 
+/**
+ * Inclusão de item na API
+ * @param {String} title Título
+ * @param {String} materials Materiais necessários
+ * @param {String} steps Passo-a-passo
+ * @param {String} imageUrl URL da imagem acompanhante
+ * @param {String} category Categoria
+ * @returns Resposta completa da promise (para uso do status)
+ */
 async function PostTutorialItemSimpleResponse(title, materials, steps, imageUrl, category) 
 {
     try 
@@ -97,6 +123,16 @@ async function PostTutorialItemSimpleResponse(title, materials, steps, imageUrl,
     }
 }
 
+/**
+ * Modificação de um item na API
+ * @param {int} id ID do objeto
+ * @param {String} title Título
+ * @param {String} materials Materiais necessários
+ * @param {String} steps Passo-a-passo
+ * @param {String} imageUrl URL da imagem acompanhante
+ * @param {String} category Categoria
+ * @returns JSON com a resposta da API (o objeto modificado)
+ */
 async function PutTutorialItem(id, title, materials, steps, imageUrl, category) 
 {
     try 
@@ -127,6 +163,16 @@ async function PutTutorialItem(id, title, materials, steps, imageUrl, category)
     }
 }
 
+/**
+ * Modificação de um item na API
+ * @param {int} id ID do objeto
+ * @param {String} title Título
+ * @param {String} materials Materiais necessários
+ * @param {String} steps Passo-a-passo
+ * @param {String} imageUrl URL da imagem acompanhante
+ * @param {String} category Categoria
+ * @returns Resposta completa da promise (para uso do status)
+ */
 async function PutTutorialItemSimpleResponse(id, title, materials, steps, imageUrl, category) 
 {
     try 
@@ -156,12 +202,15 @@ async function PutTutorialItemSimpleResponse(id, title, materials, steps, imageU
     }
 }
 
+/**
+ * Delete de item da API
+ */
 async function DeleteTutorialItemById(id) 
 {
     try 
     {
         const response = await fetch(API + '/' + id, { method: 'DELETE' });
-        
+
         //console.log(response);
 
         return response;

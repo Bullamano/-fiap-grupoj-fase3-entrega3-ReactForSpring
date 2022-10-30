@@ -27,6 +27,11 @@ function App() {
   );
 }
 
+/**
+ * Organização de route para a Home.
+ * @returns JSX com a Home e o Footer
+ * para uso do Router.
+ */
 function Landing() {
   return (
     <div>

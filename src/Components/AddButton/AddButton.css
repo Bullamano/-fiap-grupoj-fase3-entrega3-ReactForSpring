@@ -1,8 +1,9 @@
-
+/* Link */
 .Go-link {
     color: #151515;
 }
 
+/* Botão para adicionar */
 .Add-floating-back {
     position: fixed;
     bottom: 2vh;
@@ -18,6 +19,7 @@
     cursor: pointer;
 }
 
+/* Hover sobre o botão de add */
 .Add-floating-back:hover {
     background-color: #2EE59D;
     box-shadow: 0px 0px 20px rgba(46, 229, 157, 0.4);

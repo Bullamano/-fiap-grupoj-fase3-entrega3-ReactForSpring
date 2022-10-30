@@ -1,12 +1,20 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PostTutorialItemSimpleResponse } from '../../Services/FetchAPI';
+
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import TextField from '@mui/material/TextField';
+
+import { PostTutorialItemSimpleResponse } from '../../Services/FetchAPI';
+
 import BackHomeButton from '../../Components/BackHomeButton/BackHomeButton';
+
 import './AddingPage.css';
 
+/**
+ * Página para adição de itens
+ * @returns A página com funções para adicionar itens
+ */
 const AddingPage = () =>
 {
     const navigate = useNavigate();

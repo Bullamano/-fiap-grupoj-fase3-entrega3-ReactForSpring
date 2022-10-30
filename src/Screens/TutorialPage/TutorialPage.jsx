@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { GetTutorialItemById, PutTutorialItemSimpleResponse } from '../../Services/FetchAPI';
+
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import Divider from '@mui/material/Divider';
 import TextField from '@mui/material/TextField';
+
 import BackHomeButton from '../../Components/BackHomeButton/BackHomeButton';
 import DeleteButton from '../../Components/DeleteButton/DeleteButton';
-import './TutorialPage.css'
-//import CardArray from '../../ValueObjects/CardArray';
 
+import { GetTutorialItemById, PutTutorialItemSimpleResponse } from '../../Services/FetchAPI';
+
+import './TutorialPage.css'
+
+/**
+ * Página de visualização de itens.
+ * Também contém as funções de modificar itens e excluí-los.
+ * @returns A página de visualização de tutoriais.
+ */
 const TutorialPage = () =>
 {
     let { id } = useParams();

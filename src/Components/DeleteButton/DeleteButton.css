@@ -1,3 +1,4 @@
+/* Botão para deletar */
 .Delete-floating-back {
     position: fixed;
     bottom: 2vh;
@@ -12,6 +13,7 @@
     cursor: pointer;
 }
 
+/* Hover sobre o botão de delete */
 .Delete-floating-back:hover {
     background-color: #e52e2e;
     box-shadow: 0px 0px 20px rgba(229, 46, 86, 0.4);

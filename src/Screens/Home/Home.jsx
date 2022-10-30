@@ -1,9 +1,11 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+
 import AddButton from '../../Components/AddButton/AddButton';
 import CustomGrid from '../../Components/CustomGrid/CustomGrid';
 import GreeterArea from '../../Components/GreeterArea/GreeterArea';
-//import CardArray from '../../ValueObjects/CardArray';
+
 import { GetTutorialItems } from '../../Services/FetchAPI';
+
 import './Home.css';
 
 /**

@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import './CustomCard.css';
 
-//TODO Decidir se deve abrir em uma nova guia ou não
+import './CustomCard.css';
 
 /**
  * Cards com as informações de cada procedimento
+ * @param {int} id ID do objeto que popula o card
  * @param {String} title Título do procedimento
  * @param {String} imageUrl URL da imagem a ser mostrada no procedimento
  * @returns Card contendo as informações fornecidas do procedimento
@@ -23,7 +24,6 @@ const CustomCard = ({ id, title, imageUrl }) => {
     const idRoute = '/' + id; 
 
     return (
-        // target='_blank' rel='noreferrer'
         <Link to={idRoute} className='Card-link' >
             <Box className='Outer-box'>
                 <Card className='Custom-card'>

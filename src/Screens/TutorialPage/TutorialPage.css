@@ -68,6 +68,7 @@ h2 {
     margin: 20px;
 }
 
+/* Modal de update */
 .Box-modal {
     position: absolute;
     top: 50%;
@@ -81,6 +82,7 @@ h2 {
     padding: 20px;
 }
 
+/* Formulário de update */
 form {
     width: 80%;
     margin: 0 auto;

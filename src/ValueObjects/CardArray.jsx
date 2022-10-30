@@ -3,6 +3,10 @@
  * página estática como exemplo do
  * que poderia ser retornado pelo
  * backend.
+ * 
+ * Isto não é utilizado neste projeto.
+ * Para ver o projeto no qual isto foi
+ * utilizado, acesse: https://github.com/Bullamano/fiap-grupoj-fase3-entrega1-React
  */
 export const CardArray = [
     {

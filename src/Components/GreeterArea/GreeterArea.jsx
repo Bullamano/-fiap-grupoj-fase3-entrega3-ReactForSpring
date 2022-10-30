@@ -1,6 +1,9 @@
 import React from 'react';
+
 import Box from '@mui/material/Box';
+
 import lightbulbImage from '../../Assets/lightbulb-512.png'
+
 import './GreeterArea.css';
 
 /**
