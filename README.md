@@ -1,15 +1,11 @@
 # fiap-grupoj-fase3-entrega3-ReactForSpring
 Entrega 3 da Fase 3 do MBA de full stack development da FIAP pelo grupo J.
 
-  ##
-
 ## Pré-requesitos
 
 Para que este projeto funcione corretamente, é necessário que o projeto presente em <a href="https://github.com/Bullamano/fiap-grupoj-fase3-entrega2-Spring">fiap-grupoj-fase3-entrega2-Spring</a> esteja rodando na máquina e que as instruções da secção "Como rodar o projeto" tenham sido seguidas (pois aquele projeto funciona como o backend deste).
 
 Este projeto é uma evolução do projeto presente em <a href="https://github.com/Bullamano/fiap-grupoj-fase3-entrega1-React">fiap-grupoj-fase3-entrega1-React</a> e pode ser rodado da mesma maneira: através do comando "<i>npm start</i>" na raiz do projeto.
-
-  ##
 
 ## Need Help, o site mais (in)útil para seus tutoriais
 
@@ -20,6 +16,8 @@ Este projeto, como informado anteriormente, é o frontend do projeto <a href="ht
 ### Rodando o projeto
 
 O projeto é feito inteiramente em ReactJS e não precisa de configurações anteriores para ser rodado (apenas que o projeto Spring informado anteriormente já esteja rodando na mesma máquina). Basta ter NodeJS e as dependencias instaladas em sua máquina e rodar o comando "<i>npm start</i>".
+
+  ##
 
 ### Home Screen
 
