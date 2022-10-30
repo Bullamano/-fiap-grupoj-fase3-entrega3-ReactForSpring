@@ -49,6 +49,13 @@
     text-align: center;
 }
 
+/* Hover effect para cards */
+.Outer-box:hover .Title-box {
+    background-color: #218cd8;
+    box-shadow: 0px 0px 20px rgba(46, 104, 229, 0.4);
+    color: #fff;
+}
+
 /* Texto do Card */
 .Title-text {
     font-size: 2vw;

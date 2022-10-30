@@ -1,7 +1,9 @@
+/* Link de retorno */
 .Back-link {
     color: #151515;
 }
 
+/* Botão de retorno */
 .Floating-back {
     position: fixed;
     top: 10vh;
@@ -14,28 +16,33 @@
     border-radius: 0px 0px 10px 0px;
 }
 
+/* Hover effect para o botão de retorno */
 .Floating-back:hover {
     background-color: #92c2e4;
     box-shadow: 0px 0px 20px rgba(46, 104, 229, 0.4);
     color: #fff;
 }
 
+/* Container para tutorial item */
 .Tutorial-container {
     margin-top: 60px;
 }
 
+/* Div para conter o card completo */
 .Material-holder {
     background-color: #92c2e4;
     border-radius: 0 0 30px 30px;
     padding-bottom: 5px;
 }
 
+/* Container da parte superior do card */
 .Upper-holder {
     background-color: #FFA375;
     border-radius: 0 0 30px 30px;
     padding-bottom: 5px;
 }
 
+/* Container para a imagem */
 .Image-holder {
     width: 100%;
     background-color: #252525;
@@ -43,11 +50,13 @@
     border-radius: 0 0 30px 30px;
 }
 
+/* Imagem do card */
 .Tutorial-image {
     /* width: 100%; */
     max-height: 50vh;
 }
 
+/*Limitador de texto*/
 .Limit-width-box {
     max-width: 100%
 }
@@ -64,6 +73,7 @@ h2 {
     text-align: left;
 }
 
+/* Media query para a fonte modificar com o tamanho da tela */
 @media only screen and (max-width: 900px) {
     h3 {
         margin-left: 5vw;
@@ -77,6 +87,7 @@ h2 {
     }
 }
 
+/* Linha divisória */
 .Divider-cards {
     margin: 20px;
 }
